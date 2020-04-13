@@ -5,7 +5,6 @@ a weather display for a raspberry pi zero and our [AZ-Touch Pi0](https://www.hwh
 ![AZ-Touch Pi0]()
 
 # Installation
-============
 
 1. Download the [latest release](https://drive.google.com/file/d/1fyo7i7ajvh9Jw3eJMkq-weTJ9HY11tWT/)
 2. Unzip the downloaded file
@@ -13,7 +12,7 @@ a weather display for a raspberry pi zero and our [AZ-Touch Pi0](https://www.hwh
 4. Boot your Raspberry Pi and wait for WeatherPi_TFT to start.
 
 # Configuration
-==============
+
 It's recommend to use a Raspberry Pi 2, 3 or 4 connected to Ethernet for the steps 4
 
 ##  Wifi settings
