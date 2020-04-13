@@ -8,9 +8,9 @@ a weather display for a raspberry pi zero and our [AZ-Touch Pi0](https://www.hwh
 Installation
 ============
 
-1. Download the `latest release <https://drive.google.com/file/d/1fyo7i7ajvh9Jw3eJMkq-weTJ9HY11tWT/>`_.
+1. Download the [latest release](https://drive.google.com/file/d/1fyo7i7ajvh9Jw3eJMkq-weTJ9HY11tWT/)
 2. Unzip the downloaded file
-3. Write the image to your SD card. See `here <https://www.raspberrypi.org/documentation/installation/installing-images/README.md>`_ for details.
+3. Write the image to your SD card. See [here](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) for details.
 3. Customise the /boot/config/settings.ini file.
 4. Boot your Raspberry Pi and wait for WeatherPi_TFT to start.
 
