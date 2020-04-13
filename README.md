@@ -2,7 +2,7 @@
 
 a weather display for a raspberry pi zero and our [AZ-Touch Pi0](https://www.hwhardsoft.de/english/projects/az-touch-pi0) wall mount touch screen (ili9341 display). This project based on the  [WeatherPi_TFT](https://github.com/LoveBootCaptain/WeatherPi_TFT) project by [LoveboatCaptain](https://github.com/LoveBootCaptain)
 
-![AZ-Touch Pi0]()
+![AZ-Touch Pi0](https://user-images.githubusercontent.com/3049858/79129962-6de52b80-7da6-11ea-8905-ef7492807259.jpg)
 
 # Installation
 
@@ -13,15 +13,24 @@ a weather display for a raspberry pi zero and our [AZ-Touch Pi0](https://www.hwh
 
 # Configuration
 
-It's recommend to use a Raspberry Pi 2, 3 or 4 connected to Ethernet for the steps 4
-
 ##  Wifi settings
+You can follow this [tutorial](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md) to setting the Wifi headless. 
+
+or you can use a Raspberry Pi (2/3/4) connected to Ethernet via Putty and SSH:
+```bash
 sudo raspi-config
---> 
+--> 2 Network Options
+--> N2 Wi-fi
+``` 
 
 ## Localisation
+```bash
 sudo raspi-config
-
+--> 4 Localisation Options
+--> I1 Change Locale 
+--> change your language ISO-8859-1 locales
+``` 
+Please note you can choose under 4 Localisation Options your time zones too!
 
 ## Darksky Weather account
 get an api key from darksky / forecast.io:
