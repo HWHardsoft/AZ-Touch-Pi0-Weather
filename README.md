@@ -2,7 +2,7 @@
 
 a weather display for a raspberry pi zero and our [AZ-Touch Pi0](https://www.hwhardsoft.de/english/projects/az-touch-pi0) wall mount touch screen (ili9341 display). This project based on the  [WeatherPi_TFT](https://github.com/LoveBootCaptain/WeatherPi_TFT) project by [LoveboatCaptain](https://github.com/LoveBootCaptain)
 
-![AZ-Touch Pi0](https://user-images.githubusercontent.com/3049858/79129962-6de52b80-7da6-11ea-8905-ef7492807259.jpg)
+![AZ-Touch Pi0](https://user-images.githubusercontent.com/3049858/79135621-eef4f080-7daf-11ea-97a6-8760266a50bb.jpg)
 
 # Installation
 
