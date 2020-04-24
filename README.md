@@ -38,6 +38,11 @@ get an api key from darksky / forecast.io:
 * go to [darksky.net](https://darksky.net/dev/)
 * and register to get an API key
 
+### Please note:
+DarkSky weather has joined Apple some days ago. It looks like, it is currently not possible to create
+an own developer account. Service and API are available until end of 2021. 
+You can use my account number (stored in the config file of the image). 
+
 ## Edit config file
 ```bash
 cd
