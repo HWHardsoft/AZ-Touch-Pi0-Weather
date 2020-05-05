@@ -6,7 +6,7 @@ a weather display for a raspberry pi zero and our [AZ-Touch Pi0](https://www.hwh
 
 # Installation
 
-1. Download the [latest release](https://drive.google.com/file/d/1fyo7i7ajvh9Jw3eJMkq-weTJ9HY11tWT/)
+1. Download the [latest release](https://drive.google.com/open?id=1mo6LHWPsm_JBmMwiMcn8H-1lESI1KIQK)
 2. Unzip the downloaded file
 3. Write the image to your SD card. See [here](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) for details.
 4. Boot your Raspberry Pi and wait for WeatherPi_TFT to start.
@@ -32,16 +32,13 @@ sudo raspi-config
 ``` 
 Please note you can choose under 4 Localisation Options your time zones too!
 
-## Darksky Weather account
-get an api key from darksky / forecast.io:
+## Weatherbit.io account
+get an api key from weatherbit.io:
 
-* go to [darksky.net](https://darksky.net/dev/)
+* go to [weatherbit.io](https://www.weatherbit.io/account/create)
 * and register to get an API key
+* choose the free version of the API
 
-### Please note:
-DarkSky weather has joined Apple some days ago. It looks like, it is currently not possible to create
-an own developer account. Service and API are available until end of 2021. 
-You can use my API key (stored in the config file of the image). 
 
 ## Edit config file
 ```bash
@@ -49,12 +46,11 @@ cd
 cd WeatherPi_TFT
 sudo nano config.json
 ```
-* replace `xxxxxxxxxxxxxxxxxxxxxxxxx` in  `"FORECAST_IO_KEY": "xxxxxxxxxxxxxxxxxxxxxxxxx"` with your own API key
-* replace `en` in `"FORECAST_LANGUAGE": "en"` with your preferred language
-* replace `si` in `"FORECAST_UNITS": "si"` with your preferred unit format
-* replace `40.705565` and `-74.1180865` in `"FORECAST_LAT": 40.705565` and `"FORECAST_LON": -74.1180865` with the coordinates of your preferred forecast-location (this example-location data is from new york city)
-* replace `flags` in `"FORECAST_EXCLUDES": "flags"` with whatever you want to exclude in the API-respond
-* for language-support, units, lat , lon and excludes please refer to -> **[DarkSky API Docs](https://darksky.net/dev/docs/forecast)**
+* replace `xxxxxxxxxxxxxxxxxxxxxxxxx` in  `"WEATHERBIT_IO_KEY": "xxxxxxxxxxxxxxxxxxxxxxxxx"` with your own API key
+* replace `de` in `"WEATHERBIT_COUNTRY": "de"` with your country code
+* replace `en` in `"WEATHERBIT_LANGUAGE": "en"` with your preferred language
+* replace `10178` in `"WEATHERBIT_POSTALCODE": "10178"` with the postal (zip) code of your city (default loaction is Berlin)
+* for language-support, please refer to -> **[Weather.io API Docs](https://www.weatherbit.io/api)**
 
 reboot your Pizero!
 ```bash
