@@ -6,7 +6,7 @@ a weather display for a raspberry pi zero and our [AZ-Touch Pi0](https://www.hwh
 
 # Installation
 
-1. Download the [latest release](https://drive.google.com/open?id=1mo6LHWPsm_JBmMwiMcn8H-1lESI1KIQK)
+1. Download the [latest release](https://drive.google.com/file/d/1QZzLXAiHP0zN3dH7P41lqoddGeMJZ5Cf/view?usp=sharing) (2020-12-09)
 2. Unzip the downloaded file
 3. Write the image to your SD card. See [here](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) for details.
 4. Boot your Raspberry Pi and wait for WeatherPi_TFT to start.
@@ -59,6 +59,8 @@ sudo reboot
 
 # Notes about 
 Because the wiring of the TFT is different to the overlay rpi-display it was needed to recompile the original rpi-display overlay. You will find the changed source and the new compiled file here.
+
+I've tried to run the sources of WeatherPi_TFT on the latest version of Raspbian OS but without any success. It looks like Pygame will not be able to redirect the video output to /fbcon/fb1 . 
 
 # License
 
