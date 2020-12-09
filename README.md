@@ -60,7 +60,7 @@ sudo reboot
 # Notes about 
 Because the wiring of the TFT is different to the overlay rpi-display it was needed to recompile the original rpi-display overlay. You will find the changed source and the new compiled file here.
 
-I've tried to run the sources of WeatherPi_TFT on the latest version of Raspbian OS but without any success. It looks like Pygame will not be able to redirect the video output to /fbcon/fb1 . 
+I've tried to run the sources of WeatherPi_TFT on the latest version of Raspbian OS but without any success. It looks like Pygame will not be able to redirect the video output to /dev/fb1 . 
 
 # License
 
